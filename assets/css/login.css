@@ -1,0 +1,99 @@
+@import url("./general.css");
+
+body {
+  background-color: #a7c5eb;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #a7c5eb;
+  font-size: 1.7em;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.login__card {
+  height: 360px;
+  width: 250px;
+  background-color: #413c69;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 1px 20px #999, 1px 5px 20px #555;
+}
+
+.login__username,
+.login__password {
+  height: 45px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background-color: #efefef;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px #777;
+}
+
+.login__username span:nth-child(1),
+.login__password span:nth-child(1) {
+  width: 5em;
+  display: flex;
+  height: 100%;
+  background-color: #a7c5eb;
+  border-radius: 15px 0 0 15px;
+}
+
+.login__username span:nth-child(1) i,
+.login__password span:nth-child(1) i {
+  margin: auto;
+  color: #4a47a3;
+}
+
+.login__username span:nth-child(2) input,
+.login__password span:nth-child(2) input {
+  height: 25px;
+  width: 11em;
+  padding: 3px 0 0 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 0.7px;
+  color: #4a47a3;
+}
+
+input:focus {
+  outline: transparent;
+}
+
+.login__submit input {
+  width: 220px;
+  height: 2em;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 1px 5px #777;
+  background-color: #a7c5eb;
+  font-size: 20px;
+  color: #4a47a3;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.login__submit input:hover {
+  transform: scale(1.05);
+}
+
+.login__submit input:active {
+  transform: scale(0.9);
+}

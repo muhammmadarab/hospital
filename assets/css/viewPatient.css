@@ -1,0 +1,51 @@
+@import url("./general.css");
+@import url("./navbar.css");
+
+.container {
+  position: absolute;
+  top: 3.5em;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+}
+
+.patient__data {
+  width: 100vw;
+}
+
+.data__title,
+.data a,
+.history__data {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+.data__title {
+  background-color: #105bbe;
+  font-weight: bolder;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.data,
+.history__data {
+  color: #222;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.data a:hover {
+  color: #132da0;
+}
+
+.data__title span,
+.data span,
+.history__data span {
+  width: 50vw;
+}

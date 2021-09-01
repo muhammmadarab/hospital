@@ -1,0 +1,97 @@
+@import url("./general.css");
+
+nav {
+  display: flex;
+  position: absolute;
+  height: 3em;
+  width: 100vw;
+  padding: 0.5em;
+  margin: 0;
+  background-color: #132da0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 0px 0.5px 20px #000;
+  z-index: 9999;
+}
+
+.logo {
+  width: 10vw;
+  align-self: center;
+  margin-left: 2em;
+}
+
+.collapsable {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row-reverse;
+  height: 100%;
+  width: 80vw;
+}
+
+input#navbar__toggler {
+  display: none;
+}
+
+.navbar__toggler {
+  position: relative;
+  background: transparent;
+  border: none;
+  color: white;
+  justify-self: flex-end;
+  cursor: pointer;
+}
+
+.fa-bars,
+.fa-times {
+  position: absolute;
+  top: 6px;
+  right: 1.5em;
+  font-size: 1.5em;
+}
+
+.fa-times {
+  display: none;
+}
+
+.nav__links {
+  display: none;
+  align-items: center;
+  position: absolute;
+  top: 3em;
+  left: 0;
+  background-color: #3552d3;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.nav__link {
+  margin: 1em;
+}
+
+input#navbar__toggler:checked ~ div ul.nav__links,
+input#navbar__toggler:checked ~ label.navbar__toggler .fa-times {
+  display: flex;
+}
+
+input#navbar__toggler:checked ~ label.navbar__toggler .fa-bars {
+  display: none;
+}
+
+@media (min-width: 920px) {
+  label.navbar__toggler {
+    display: none;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    top: 0;
+    left: unset;
+    height: 3em;
+    right: 2em;
+    width: fit-content;
+  }
+}

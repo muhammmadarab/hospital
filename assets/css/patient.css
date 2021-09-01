@@ -1,0 +1,131 @@
+@import url("./general.css");
+@import url("./navbar.css");
+
+.container {
+  position: absolute;
+  top: 50em;
+}
+
+.patient__details {
+  position: absolute;
+  top: 3.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #2e2aac;
+  color: #fff;
+  padding: 2em 1em;
+  width: 100vw;
+}
+
+.patient__img {
+  height: 8em;
+  width: 8em;
+  border: 3px solid #413c69;
+  border-radius: 10px;
+}
+
+.patient__name-detail {
+  font-size: 2em;
+  margin: 0.5em auto 0.1em;
+  letter-spacing: 2px;
+}
+
+.patient__age {
+  font-size: 1.2em;
+}
+
+.detailed__details {
+  margin: 1em;
+  text-align: start;
+}
+
+.detailed__details li {
+  margin: 1em auto;
+  font-size: 1.2em;
+}
+
+.detailed__details li i {
+  color: #a7c5eb;
+}
+
+.btn__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.patient__action {
+  width: 80vw;
+  height: 3em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.detailed__details .btn__group i {
+  margin-right: 1em;
+}
+
+.patient__action:hover {
+  transform: scale(1.1);
+}
+
+.patient__action:active {
+  transform: scale(0.9);
+}
+
+.patient__action-appointment {
+  background-color: blue;
+  box-shadow: 0.3px 3px 3px rgb(10, 10, 177);
+}
+
+.patient__action-modify {
+  background-color: #0c078f;
+  box-shadow: 0.3px 3px 3px #050353;
+}
+
+.patient__action-delete {
+  background-color: red;
+  box-shadow: 0.3px 3px 3px rgb(104, 4, 4);
+}
+
+@media (min-width: 600px) {
+  .container {
+    top: 48em;
+  }
+}
+
+@media (min-width: 920px) {
+  .container {
+    top: 33em;
+  }
+  .patient__details {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3em 5em;
+  }
+
+  .basic__details {
+    margin-left: 5em;
+  }
+
+  .detailed__details {
+    margin: 5em 5em 0;
+  }
+
+  .btn__group {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5em;
+  }
+
+  .patient__action {
+    width: 10em;
+  }
+}

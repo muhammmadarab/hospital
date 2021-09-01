@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- important meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title and favicon -->
+    <title>Patient Name</title>
+    <link rel="shortcut icon" href="/assets/img/" type="image/x-icon">
+
+    <!-- fa fa-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css"
+        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="/assets/css/viewPatient.css">
+    <link rel="stylesheet" href="/assets/css/patient.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/doctor/" class="logo">Hospital</a>
+        <div class="collapsable">
+            <input type="checkbox" name="navbar__toggler" id="navbar__toggler">
+            <label class="navbar__toggler" for="navbar__toggler">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times"></i>
+            </label>
+            <div>
+                <ul class="nav__links">
+                    <li class="nav__link"><a href="/doctor/">Home</a></li>
+                    <li class="nav__link"><a href="/patientHistory/">Patients</a></li>
+                    <li class="nav__link"><a href="/currentSchedules/">Schedule</a></li>
+                    <li class="nav__link"><a href="/">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="patient__details">
+        <div class="basic__details">
+            <img class="patient__img" src="https://randomuser.me/api/portraits/women/17.jpg" alt="">
+            <h2 class="doctor__name-detail">Kathryn Bailey</h2>
+            <h3 class="patient__age">Age: <span>22</span></h3>
+        </div>
+        <div class="detailed__details">
+            <ul>
+                <li class="patient__number">
+                    <span><i class="fa fa-phone"></i> : </span>
+                    <span>(083)-062-6728</span>
+                </li>
+                <li class="patient__email">
+                    <span><i class="fa fa-envelope"></i> : </span>
+                    <span>kathryn.bailey@example.com</span>
+                </li>
+                <li class="patient__address">
+                    <span><i class="fa fa-map-marker"></i> : </span>
+                    <span>
+                        5652 Country Club Rd, Washington DC,
+                        Washington. - 63090
+                    </span>
+                </li>
+            </ul>
+            <div class="btn__group" style="visibility: hidden;">
+                <button class="patient__action patient__action-appointment">
+                    <i class="fa fa-calendar"></i>
+                    Schedule
+                </button>
+                <button class="patient__action patient__action-modify">
+                    <i class="fa fa-pen"></i>
+                    Modify
+                </button>
+                <button class="patient__action patient__action-delete">
+                    <i class="fa fa-trash"></i>
+                    Delete
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div>
+            <ul class="patient__data">
+                <li class="data__title">
+                    <span class="last__visit">Last Visit</span>
+                    <span class="doctor__name">Details</span>
+                </li>
+                <li class="history__data">
+                    <span class="last__visit">17 July, 2021</span>
+                    <span class="doctor__name">
+                        Details: Fever
+                        <br>
+                        Suggetions: Paracetamol
+                    </span>
+                </li>
+                <li class="history__data">
+                    <span class="last__visit">10 July, 2021</span>
+                    <span class="doctor__name">
+                        Details: Cold
+                        <br>
+                        Suggetions: Steam Inhalation
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

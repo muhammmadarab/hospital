@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- important meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title and favicon -->
+    <title>Login</title>
+    <link rel="shortcut icon" href="/assets/img/" type="image/x-icon">
+
+    <!-- fa fa-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css"
+        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="/assets/css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login__card">
+            <h3 class="title">Welcome</h3>
+            <form id="logInForm" method="POST">
+                <div class="login__username">
+                    <span>
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <span>
+                        <input type="text" name="username" id="username" placeholder="Username"
+                            autocomplete="new-password">
+                    </span>
+                </div>
+                <div class="login__password">
+                    <span>
+                        <i class="fa fa-lock"></i>
+                    </span>
+                    <span>
+                        <input type="password" name="password" id="password" placeholder="Password"
+                            autocomplete="new-password">
+                    </span>
+                </div>
+                <div class="login__submit">
+                    <input type="submit" value="Log in" id="loginBtn">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/js/login.js"></script>
+</body>
+
+</html>
